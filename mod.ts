@@ -21,7 +21,7 @@ function parse(code: string, input?: string) {
       }
       case "<": {
         if (memoPos === 0) {
-          throw new Error("Can't move left while on position 1.");
+          throw new Error("Can't move left while on position 0.");
         }
         memoPos--;
         break;
